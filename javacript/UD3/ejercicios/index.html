@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Ejercicio 1:</p>
+    <button onclick="window.history.back()">Atras</button>
+    <p>Ejercicio 2:</p>
+    <button onclick="window.open('https:\/\/www.google.com')">Popup</button>
+    <p>Ejercicio 3:</p>
+    <button onclick="imprimirNumeros()">Imprimir</button>
+    <script>
+        function imprimirNumeros() {
+            for (i = 0; i < 500; i++) {
+                if (i % 3 == 0 && !esPrimo(i)) {
+                    document.body.innerHTML += i + " "
+                }
+            }
+        }
+        function esPrimo(numero) {
+            entresimismo = numero % numero == 0
+            entreuno = numero % 1 == 0
+            entrelosdemas = false;
+            for (i = 2; i < numero; i++) {
+                if (numero % i == 0) {
+                    entrelosdemas = true;
+                }
+            }
+            if (entresimismo && entreuno && !entrelosdemas) {
+                return true
+            }
+            return false
+        }
+
+    </script>
+    <p>Ejercicio 4:</p>
+    <button onclick="mayorymenor()">Ejecutar</button>
+    <script>
+        function mayorymenor() {
+            let array = [prompt("numero 1?"), prompt("numero 2?"), prompt("numero 3?"), prompt("numero 4?"), prompt("numero 5?"), prompt("numero 6?"), prompt("numero 7?"), prompt("numero 8?"), prompt("numero 9?"), prompt("numero 10?")];
+            let mayor = array[0]
+            for (i = 0; i < array.length; i++) {
+                if (array[i] > mayor) {
+                    mayor = array[i]
+                }
+            }
+            document.body.innerHTML += "El numero mayor es " + mayor
+            let menor = array[1]
+            for (i = 0; i < array.length; i++) {
+                if (array[i] < menor) {
+                    menor = array[i]
+                }
+            }
+            document.body.innerHTML += "El numero menor es " + menor
+            console.log(array.length)
+        }
+
+    </script>
+    <p>Ejercicio 5:</p>
+    <button onclick="tallaf()">Talla</button>
+    <script>
+        function tallaf() {
+            let talla = prompt("Talla?")
+            switch (talla) {
+                case "XXL":
+                case "XL":
+                case "L":
+                    document.body.innerHTML += "Grande"
+                    break;
+                case "M":
+                    document.body.innerHTML += "Mediano"
+                    break;
+                case "S":
+                case "XS":
+                case "XXS":
+                    document.body.innerHTML += "Pequeño"
+                    break;
+            }
+        }
+    </script>
+    <p>Ejercicio 6:</p>
+    <button onclick="calcular()">Calcular</button>
+    <script>
+        function calcular() {
+            let radio = prompt("Radio?")
+            document.body.innerHTML += "La longitud de un circulo con radio de " + radio + " es " + (2 * Math.PI * radio)
+
+        }
+    </script>
+    <p>Ejercicio 7:</p>
+    <button onclick="loteria()">Loteria</button>
+    <script>
+        function loteria() {
+            document.body.innerHTML += "Numeros: "
+            for (i = 0; i < 5; i++) {
+                document.body.innerHTML += Math.round(Math.random() * 50) + " "
+            }
+            document.body.innerHTML += "Estrellas: : "
+            document.body.innerHTML += "Numeros: "
+            for (i = 0; i < 5; i++) {
+                document.body.innerHTML += Math.round(Math.random() * 10) + " "
+            }
+        }
+
+    </script>
+    <p>Ejercicio 8:</p>
+    <button onclick="matriz()">Matriz</button>
+    <script>
+        function matriz() {
+            let longitudx = prompt("Longitud x");
+            let longitudy = prompt("Longitud y");
+            for(i = 0;i<longitudx;i++){
+                for(j = 0;j<longitudy;j++){
+
+                }
+            }
+            
+            
+            //document.body.innerHTML += "Grande"
+
+        }
+    </script>
+    <p>Ejercicio 9:</p>
+    <button onclick=""></button>
+    <script>
+        function x() {
+            document.body.innerHTML += "Grande"
+
+        }
+    </script>
+    <p>Ejercicio 10:</p>
+    <button onclick=""></button>
+    <script>
+        function x() {
+            document.body.innerHTML += "Grande"
+
+        }
+    </script>
+    <p>Ejercicio 11:</p>
+    <button onclick=""></button>
+    <script>
+        function x() {
+            document.body.innerHTML += "Grande"
+
+        }
+    </script>
+    <p>Ejercicio 12:</p>
+    <button onclick=""></button>
+    <script>
+        function x() {
+            document.body.innerHTML += "Grande"
+
+        }
+    </script>
+    <p>Ejercicio 13:</p>
+    <button onclick=""></button>
+    <script>
+        function x() {
+
+        }
+    </script>
+    <p>Ejercicio 14:</p>
+    <button onclick=""></button>
+    <script>
+        function x() {
+            document.body.innerHTML += "Grande"
+
+        }
+    </script>
+
+</body>
+
+</html>
