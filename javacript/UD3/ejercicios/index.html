@@ -96,15 +96,36 @@
     <button onclick="loteria()">Loteria</button>
     <script>
         function loteria() {
-            document.body.innerHTML += "Numeros: "
-            for (i = 0; i < 5; i++) {
-                document.body.innerHTML += Math.round(Math.random() * 50) + " "
+            let numeros = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            let estrellas = [0, 0]
+            numeros[0] = Math.round(Math.random() * 50)
+            while (numeros[0] == numeros[1]) {
+                numeros[1] = Math.round(Math.random() * 50)
             }
-            document.body.innerHTML += "Estrellas: : "
-            document.body.innerHTML += "Numeros: "
-            for (i = 0; i < 5; i++) {
-                document.body.innerHTML += Math.round(Math.random() * 10) + " "
+            while (numeros[0] == numeros[2] || numeros[1] == numeros[2]) {
+                numeros[2] = Math.round(Math.random() * 50)
             }
+            while (numeros[0] == numeros[3] || numeros[1] == numeros[3] || numeros[2] == numeros[3]) {
+                numeros[3] = Math.round(Math.random() * 50)
+            }
+            while (numeros[0] == numeros[4] || numeros[1] == numeros[4] || numeros[2] == numeros[4] || numeros[3] == numeros[4]) {
+                numeros[4] = Math.round(Math.random() * 50)
+            }
+            while (estrellas[0] == numeros[1]) {
+                estrellas[1] = Math.round(Math.random() * 10)
+            }
+            while (numeros[0] == numeros[2] || numeros[1] == numeros[2]) {
+                estrellas[2] = Math.round(Math.random() * 10)
+            }
+            for(i = 0;i<numeros.length;i++){
+                document.body.innerHTML += numeros[i] + " " 
+            }
+            document.body.innerHTML += "\n"
+            for(i = 0;i<estrellas.length;i++){
+                document.body.innerHTML += estrellas[i] + " " 
+            }
+
+
         }
 
     </script>
@@ -114,13 +135,13 @@
         function matriz() {
             let longitudx = prompt("Longitud x");
             let longitudy = prompt("Longitud y");
-            for(i = 0;i<longitudx;i++){
-                for(j = 0;j<longitudy;j++){
+            for (i = 0; i < longitudx; i++) {
+                for (j = 0; j < longitudy; j++) {
 
                 }
             }
-            
-            
+
+
             //document.body.innerHTML += "Grande"
 
         }
