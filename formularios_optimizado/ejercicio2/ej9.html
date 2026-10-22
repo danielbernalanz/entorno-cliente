@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reclamos</title>
+</head>
+<body>
+    <h1>Reclamos</h1>
+
+    <form action="enviar_reclamo.php" method="post">
+        <label for="nombre">Ingrese su nombre</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <br><br>
+
+        <label for="direccion">Ingrese su dirección</label>
+        <input type="text" name="direccion" id="direccion" required>
+        <br><br>
+
+        <label for="problema">Informe del problema</label>
+        <textarea name="problema" id="problema" rows="4" cols="40" required></textarea>
+
+        <br><br>
+        <input type="submit" value="Enviar reclamo">
+    </form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguajes que conoce</title>
+</head>
+<body>
+    <form action="registrardatos.php" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Ingrese nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Seleccione los lenguajes que conoce:</legend>
+            <input type="checkbox" name="lenguajes[]" id="java" value="java">
+            <label for="java">Java</label>
+            <br>
+            <input type="checkbox" name="lenguajes[]" id="cpp" value="c++">
+            <label for="cpp">C++</label>
+            <br>
+            <input type="checkbox" name="lenguajes[]" id="c" value="c">
+            <label for="c">C</label>
+            <br>
+            <input type="checkbox" name="lenguajes[]" id="csharp" value="c#">
+            <label for="csharp">C#</label>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de datos</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Apellido y nombre:</label>
+            <input type="text" name="apellido_nombre" id="nombre" required>
+            <br><br>
+
+            <label for="documento">Documento de identidad:</label>
+            <input type="text" name="documento" id="documento" required>
+            <br><br>
+
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" name="fecha_nacimiento" id="fecha" required>
+            <br><br>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" name="direccion_personal" id="direccion">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Datos laborales</legend>
+
+            <label for="empresa">Nombre de la empresa:</label>
+            <input type="text" name="empresa" id="empresa">
+            <br><br>
+
+            <label for="actividad">Actividad:</label>
+            <input type="text" name="actividad" id="actividad">
+            <br><br>
+
+            <label for="direccion_laboral">Dirección:</label>
+            <input type="text" name="direccion_laboral" id="direccion_laboral">
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+    </form>
+</body>
+</html>

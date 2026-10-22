@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <form action="enviar.php" method="post">
+        <fieldset>
+            <legend>Datos de contacto</legend>
+
+            <label for="nombre">Ingrese nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <br><br>
+
+            <label for="email">Ingrese email</label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+
+            <label for="comentarios">Comentarios:</label>
+            <br>
+            <textarea name="comentarios" id="comentarios" rows="4" cols="30"></textarea>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre y foto</title>
+</head>
+<body>
+    <form action="enviar.php" method="post" enctype="multipart/form-data">
+        <label for="nombre">Ingrese nombre</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <br><br>
+
+        <label for="foto">Seleccione la foto</label>
+        <input type="file" name="foto" id="foto" accept="image/*">
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

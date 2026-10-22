@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel de estudios</title>
+</head>
+<body>
+    <form action="enviar.php" method="post">
+        <fieldset>
+            <legend>Seleccione el nivel máximo de estudios que tiene</legend>
+
+            <input type="radio" name="estudios" id="sin_estudios" value="1">
+            <label for="sin_estudios">Sin estudios</label>
+            <br>
+
+            <input type="radio" name="estudios" id="primario" value="2">
+            <label for="primario">Primario</label>
+            <br>
+
+            <input type="radio" name="estudios" id="secundario" value="3">
+            <label for="secundario">Secundario</label>
+            <br>
+
+            <input type="radio" name="estudios" id="universitario" value="4">
+            <label for="universitario">Universitario</label>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

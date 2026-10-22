@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de comentarios</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Formulario de comentarios</legend>
+
+            <label for="nombre">Ingrese su nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <br><br>
+
+            <label for="mail">Ingrese su mail:</label>
+            <input type="email" name="mail" id="mail" required>
+            <br><br>
+
+            <label for="comentarios">Comentarios:</label>
+            <br>
+            <textarea name="comentarios" id="comentarios" rows="4" cols="40" required></textarea>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+    </form>
+</body>
+</html>

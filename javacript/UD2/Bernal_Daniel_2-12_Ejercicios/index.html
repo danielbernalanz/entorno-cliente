@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selección de Ciudad</title>
+</head>
+
+<body>
+    <button onclick="
+        let ciudad = prompt('Por favor, introduce una de estas ciudades (Zaragoza, Barcelona, Madrid):');
+
+        if (ciudad !== null && ciudad !== '') {
+            switch (ciudad) {
+                case 'Zaragoza':
+                    alert('¡Has elegido Zaragoza! Disfruta de la imponente Basílica del Pilar y su gran ambiente.');
+                    break;
+                case 'Barcelona':
+                    alert('¡Has elegido Barcelona! Déjate maravillar por la Sagrada Familia y el mar Mediterráneo.');
+                    break;
+                case 'Madrid':
+                    alert('¡Has elegido Madrid! Visita el Museo del Prado y pasea por el Parque del Retiro.');
+                    break;
+                default:
+                    alert('La ciudad no es válida.');
+                    break;
+            }
+        } else {
+            alert('No has introducido ninguna ciudad.');
+        }
+    ">Elegir Ciudad</button>
+    <script src="op1.js"></script>
+    <script src="op2.js"></script>
+</body>
+
+</html>

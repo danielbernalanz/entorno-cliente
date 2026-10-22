@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="apellido_nombre">Apellido y nombre</label>
+            <input type="text" name="apellido_nombre" id="apellido_nombre" required>
+            <br><br>
+
+            <p>¿Es mayor de edad?</p>
+            <input type="radio" name="mayor_edad" id="si" value="si" checked>
+            <label for="si">Sí</label>
+            <br>
+            <input type="radio" name="mayor_edad" id="no" value="no">
+            <label for="no">No</label>
+            <br><br>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" id="telefono">
+        </fieldset>
+
+        <br>
+
+        <label for="comentarios">Comentarios:</label>
+        <br>
+        <textarea name="comentarios" id="comentarios" rows="4" cols="30" placeholder="Ingrese aquí sus comentarios"></textarea>
+
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
